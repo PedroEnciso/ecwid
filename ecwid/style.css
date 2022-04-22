@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom properties */
+body {
+  /* fonts */
+  --font-heading: "Volkhov", serif;
+  --font-text: "Montserrat", sans-serif;
+
+  /* color */
+  --clr-green: #06945b;
+  --clr-green-light: #68e5a2;
+  --clr-orange: #f1b280;
+  --clr-blue: #395be0;
+  --clr-yellow: #fae053;
+  --text-dark: #333;
+  --text-light: #666;
+}
+
+body {
+  font-family: var(--font-text);
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: calc(40px + 35 * (100vw - 320px) / 279);
+  line-height: 1.2em;
+}
+
+p {
+  line-height: 1.75em;
+}
+
+/* Utilities */
+.font-500 {
+  font-weight: 500;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.padding-top-lg {
+  padding-top: 3rem;
+}
+
+.padding-top-md {
+  padding-top: 2rem;
+}
+
+.padding-top-sm {
+  padding-top: 1rem;
+}
+
+.text-light {
+}
+
+/* 
+.grid {
+  margin: 3rem 1rem;
+  border: 3px solid #111;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.box {
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.box-1 {
+  background-color: red;
+  grid-row: 2/6;
+  grid-column: 1/6;
+}
+
+.box-2 {
+  background-color: blue;
+  grid-row: 1/5;
+  grid-column: 6/11;
+}
+
+.box-5 {
+  background-color: green;
+  grid-row: 5/7;
+  grid-column: 2/12;
+} */
