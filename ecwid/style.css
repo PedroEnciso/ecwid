@@ -118,6 +118,10 @@ p {
   margin-top: 1.5rem;
 }
 
+.margin-top-xs {
+  margin-top: 0.85rem;
+}
+
 /* Button utilities */
 .btn {
   display: block;
@@ -177,6 +181,12 @@ p {
 
 .review-text {
   text-align: center;
+}
+
+.feature {
+  padding: 0rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* 
