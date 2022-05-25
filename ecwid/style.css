@@ -12,12 +12,13 @@ body {
 
   --font-small: calc(14px + 12 * (100vw - 320px) / 279);
   --font-medium: calc(16px + 14 * (100vw - 320px) / 279);
-  --font-large: calc(40px + 35 * (100vw - 320px) / 279);
+  --font-large: calc(32px + 28 * (100vw - 320px) / 279);
+  --font-extra-large: calc(40px + 35 * (100vw - 320px) / 279);
 
   /* color */
   --clr-green: #06945b;
-  --clr-green-light: #68e5a2;
-  --clr-orange: #f1b280;
+  --clr-green-light: rgb(132, 243, 183);
+  --clr-orange: rgb(255, 198, 153);
   --clr-blue: #395be0;
   --clr-yellow: #fae053;
   --text-black: #000;
@@ -39,7 +40,7 @@ h3 {
 }
 
 h1 {
-  font-size: var(--font-large);
+  font-size: var(--font-extra-large);
   line-height: 1.2em;
 }
 
@@ -89,6 +90,10 @@ p {
   font-size: var(--font-large);
 }
 
+.font-xl {
+  font-size: var(--font-extra-large);
+}
+
 .text-dark {
   color: var(--text-dark);
 }
@@ -124,12 +129,11 @@ p {
 
 /* Button utilities */
 .btn {
-  display: block;
-  width: fit-content;
+  width: 100%;
   border: 2px solid #000;
   color: var(--text-black);
   font-weight: 600;
-  padding: 1.4rem 4rem;
+  padding: 1.4rem 0rem;
   font-size: var(--font-small);
 }
 
@@ -147,6 +151,14 @@ p {
 
 .bg-green {
   background-color: var(--clr-green);
+}
+
+.bg-light-green {
+  background-color: var(--clr-green-light);
+}
+
+.bg-orange {
+  background-color: var(--clr-orange);
 }
 
 /* CSS */
@@ -189,6 +201,30 @@ p {
   grid-template-columns: 1fr;
 }
 
+.feature-image {
+  width: 100%;
+}
+
+.testimonial {
+  padding: 2.8rem 2.5rem;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-profile img {
+  max-width: 50px;
+  margin-right: 1.75rem;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
 /* 
 .grid {
   margin: 3rem 1rem;
